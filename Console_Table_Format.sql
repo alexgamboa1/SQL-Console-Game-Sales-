@@ -1,3 +1,5 @@
+--Create a database and add in your first table for your data. 
+
 CREATE TABLE console_games (
 	game_rank integer, 
 	game_name  varchar(1200), 
@@ -11,6 +13,14 @@ CREATE TABLE console_games (
     	other_sales float8    
 );
 
+--Import data into pgAdmin 
+
+--Make sure the data made it into pgAdmin 
+SELECT * 
+From console_games
+
+
+--Create second table for your second dataset 
 CREATE TABLE console_dates (
     platform_name char(120),
     first_retail_availability date,
@@ -19,9 +29,9 @@ CREATE TABLE console_dates (
     platform_comment varchar(120)    
 );
 
+--Import data into pgAdmin 
 
-SELECT * 
-From Console_games
+--Make sure the data made it into pgAdmin 
 
 SELECT * 
 From Console_Dates 
